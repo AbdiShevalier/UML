@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cartel Interactivo: UML</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
@@ -11,176 +11,85 @@
 
 <div class="container">
     <header>
-        <h1>Lenguaje de Modelado Unificado (UML)</h1>
+        <h1>HOLA GRUPO Lenguaje de Modelado Unificado (UML)</h1>
         <p>Cartel Interactivo - Guía de Consulta de Diagramas</p>
-      </header>
+    </header>
 
-      <div class="tab-buttons">
-        <button class="tablinks active" onclick="openTab(event, 'Clases')">
-          Diagrama de Clases
-        </button>
-        <button class="tablinks" onclick="openTab(event, 'Casos')">
-          Casos de Uso
-        </button>
-        <button class="tablinks" onclick="openTab(event, 'Secuencia')">
-          Secuencia
-        </button>
-        <button class="tablinks" onclick="openTab(event, 'Actividades')">
-          Actividades
-        </button>
-      </div>
-
-      <div id="Clases" class="tab-content active">
-        <div class="text-section">
-          <h2 class="diagram-title">Diagrama de Clases</h2>
-          <div class="info-block">
-            <div class="tag">Definición</div>
-            <br />Muestra la estructura estática del sistema, definiendo sus
-            clases, atributos, operaciones y las relaciones entre los diferentes
-            objetos.
-          </div>
-          <div class="info-block">
-            <div class="tag">Uso</div>
-            <br />Es el pilar del desarrollo orientado a objetos. Se usa para el
-            modelado conceptual y como mapa directo para la escritura de código.
-          </div>
-          <div class="info-block">
-            <div class="tag">Gráficos</div>
-            <br />Cajas divididas en 3 secciones (Nombre, Atributos, Métodos)
-            conectadas por líneas que indican multiplicidad y tipo de
-            asociación.
-          </div>
-          <div class="info-block">
-            <div class="tag">Ejemplo</div>
-            <br />La clase <b>Estudiante</b> se relaciona con la clase
-            <b>Curso</b>. La línea indica que 1 estudiante puede inscribir
-            múltiples (*) cursos.
-          </div>
-        </div>
-        <div class="image-section">
-          <img src="img/Diagrama de Clases.png" alt="Diagrama de Clases UML" />
-        </div>
-      </div>
-
-      <div id="Casos" class="tab-content">
-        <div class="text-section">
-          <h2 class="diagram-title">Casos de Uso</h2>
-          <div class="info-block">
-            <div class="tag">Definición</div>
-            <br />Describe la funcionalidad del sistema desde la perspectiva de
-            los usuarios externos (actores) y cómo interactúan con él.
-          </div>
-          <div class="info-block">
-            <div class="tag">Uso</div>
-            <br />Se utiliza en el análisis inicial para capturar los requisitos
-            funcionales y entender qué espera el usuario que haga el software.
-          </div>
-          <div class="info-block">
-            <div class="tag">Gráficos</div>
-            <br />Textos externos para Actores, Óvalos para los Casos de Uso
-            (acciones), y un rectángulo punteado delimitando las fronteras del
-            sistema.
-          </div>
-          <div class="info-block">
-            <div class="tag">Ejemplo</div>
-            <br />En una <b>App de Entregas</b>, el actor
-            <i>Cliente</i> interactúa con "Realizar Pedido", mientras que el
-            <i>Repartidor</i> con "Aceptar Entrega".
-          </div>
-        </div>
-        <div class="image-section">
-          <img
-            src="img/Diagrama de Casos de Uso.png"
-            alt="Diagrama de Casos de Uso UML"
-          />
-        </div>
-      </div>
-
-      <div id="Secuencia" class="tab-content">
-        <div class="text-section">
-          <h2 class="diagram-title">Secuencia</h2>
-          <div class="info-block">
-            <div class="tag">Definición</div>
-            <br />Muestra cómo los objetos interactúan entre sí y el orden
-            cronológico en el que ocurren dichas interacciones a lo largo del
-            tiempo.
-          </div>
-          <div class="info-block">
-            <div class="tag">Uso</div>
-            <br />Ideal para documentar el flujo de datos y el control de un
-            escenario específico (como una transacción) paso a paso.
-          </div>
-          <div class="info-block">
-            <div class="tag">Gráficos</div>
-            <br />Rectángulos en la parte superior con "líneas de vida"
-            punteadas que caen verticalmente, y flechas horizontales que
-            representan el envío de mensajes.
-          </div>
-          <div class="info-block">
-            <div class="tag">Ejemplo</div>
-            <br />Proceso de Login: El <i>Usuario</i> envía credenciales a la
-            <i>Interfaz</i>, esta consulta a la <i>Base de Datos</i>, la cual
-            retorna el éxito o error.
-          </div>
-        </div>
-        <div class="image-section">
-          <img
-            src="img/Diagrama de Secuencia.png"
-            alt="Diagrama de Secuencia UML"
-          />
-        </div>
-      </div>
-
-      <div id="Actividades" class="tab-content">
-        <div class="text-section">
-          <h2 class="diagram-title">Actividades</h2>
-          <div class="info-block">
-            <div class="tag">Definición</div>
-            <br />Representa el flujo de trabajo paso a paso de las actividades
-            y acciones, actuando como un diagrama de flujo avanzado para
-            objetos.
-          </div>
-          <div class="info-block">
-            <div class="tag">Uso</div>
-            <br />Modelar la lógica interna de procesos de negocio complejos,
-            algoritmos matemáticos o las operaciones de un caso de uso.
-          </div>
-          <div class="info-block">
-            <div class="tag">Gráficos</div>
-            <br />Círculos para inicio/fin, rectángulos redondeados para
-            actividades, rombos para decisiones lógicas (If/Else) y flechas
-            direccionales.
-          </div>
-          <div class="info-block">
-            <div class="tag">Ejemplo</div>
-            <br />Operación de un Cajero: Se inserta tarjeta, valida PIN y hay
-            un rombo de decisión. Si es correcto, da dinero; si no, muestra
-            error.
-          </div>
-        </div>
-        <div class="image-section">
-          <img
-            src="img/Diagrama de Actividades.png"
-            alt="Diagrama de Actividades UML"
-          />
-        </div>
-      </div>
+    <div class="tab-buttons">
+        <button class="tablinks active" onclick="openTab(event, 'Clases')">Diagrama de Clases</button>
+        <button class="tablinks" onclick="openTab(event, 'Casos')">Casos de Uso</button>
+        <button class="tablinks" onclick="openTab(event, 'Secuencia')">Secuencia</button>
+        <button class="tablinks" onclick="openTab(event, 'Actividades')">Actividades</button>
     </div>
 
-    <script>
-      function openTab(evt, tabName) {
+    <div id="Clases" class="tab-content active">
+        <div class="text-section">
+            <h2 class="diagram-title">Diagrama de Clases</h2>
+            <div class="info-block"><div class="tag">Definición</div><br>Muestra la estructura estática del sistema, definiendo sus clases, atributos, operaciones y las relaciones entre los diferentes objetos.</div>
+            <div class="info-block"><div class="tag">Uso</div><br>Es el pilar del desarrollo orientado a objetos. Se usa para el modelado conceptual y como mapa directo para la escritura de código.</div>
+            <div class="info-block"><div class="tag">Gráficos</div><br>Cajas divididas en 3 secciones (Nombre, Atributos, Métodos) conectadas por líneas que indican multiplicidad y tipo de asociación.</div>
+            <div class="info-block"><div class="tag">Ejemplo</div><br>La clase <b>Estudiante</b> se relaciona con la clase <b>Curso</b>. La línea indica que 1 estudiante puede inscribir múltiples (*) cursos.</div>
+        </div>
+        <div class="image-section">
+            <img src="img/Diagrama de Clases.png" alt="Diagrama de Clases UML">
+        </div>
+    </div>
+
+    <div id="Casos" class="tab-content">
+        <div class="text-section">
+            <h2 class="diagram-title">Casos de Uso</h2>
+            <div class="info-block"><div class="tag">Definición</div><br>Describe la funcionalidad del sistema desde la perspectiva de los usuarios externos (actores) y cómo interactúan con él.</div>
+            <div class="info-block"><div class="tag">Uso</div><br>Se utiliza en el análisis inicial para capturar los requisitos funcionales y entender qué espera el usuario que haga el software.</div>
+            <div class="info-block"><div class="tag">Gráficos</div><br>Textos externos para Actores, Óvalos para los Casos de Uso (acciones), y un rectángulo punteado delimitando las fronteras del sistema.</div>
+            <div class="info-block"><div class="tag">Ejemplo</div><br>En una <b>App de Entregas</b>, el actor <i>Cliente</i> interactúa con "Realizar Pedido", mientras que el <i>Repartidor</i> con "Aceptar Entrega".</div>
+        </div>
+        <div class="image-section">
+            <img src="img/Diagrama de Casos de Uso.png" alt="Diagrama de Casos de Uso UML">
+        </div>
+    </div>
+
+    <div id="Secuencia" class="tab-content">
+        <div class="text-section">
+            <h2 class="diagram-title">Secuencia</h2>
+            <div class="info-block"><div class="tag">Definición</div><br>Muestra cómo los objetos interactúan entre sí y el orden cronológico en el que ocurren dichas interacciones a lo largo del tiempo.</div>
+            <div class="info-block"><div class="tag">Uso</div><br>Ideal para documentar el flujo de datos y el control de un escenario específico (como una transacción) paso a paso.</div>
+            <div class="info-block"><div class="tag">Gráficos</div><br>Rectángulos en la parte superior con "líneas de vida" punteadas que caen verticalmente, y flechas horizontales que representan el envío de mensajes.</div>
+            <div class="info-block"><div class="tag">Ejemplo</div><br>Proceso de Login: El <i>Usuario</i> envía credenciales a la <i>Interfaz</i>, esta consulta a la <i>Base de Datos</i>, la cual retorna el éxito o error.</div>
+        </div>
+        <div class="image-section">
+            <img src="img/Diagrama de Secuencia.png" alt="Diagrama de Secuencia UML">
+        </div>
+    </div>
+
+    <div id="Actividades" class="tab-content">
+        <div class="text-section">
+            <h2 class="diagram-title">Actividades</h2>
+            <div class="info-block"><div class="tag">Definición</div><br>Representa el flujo de trabajo paso a paso de las actividades y acciones, actuando como un diagrama de flujo avanzado para objetos.</div>
+            <div class="info-block"><div class="tag">Uso</div><br>Modelar la lógica interna de procesos de negocio complejos, algoritmos matemáticos o las operaciones de un caso de uso.</div>
+            <div class="info-block"><div class="tag">Gráficos</div><br>Círculos para inicio/fin, rectángulos redondeados para actividades, rombos para decisiones lógicas (If/Else) y flechas direccionales.</div>
+            <div class="info-block"><div class="tag">Ejemplo</div><br>Operación de un Cajero: Se inserta tarjeta, valida PIN y hay un rombo de decisión. Si es correcto, da dinero; si no, muestra error.</div>
+        </div>
+        <div class="image-section">
+            <img src="img/Diagrama de Actividades.png" alt="Diagrama de Actividades UML">
+        </div>
+    </div>
+</div>
+
+<script>
+    function openTab(evt, tabName) {
         var i, tabcontent, tablinks;
         tabcontent = document.getElementsByClassName("tab-content");
         for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].classList.remove("active");
+            tabcontent[i].classList.remove("active");
         }
         tablinks = document.getElementsByClassName("tablinks");
         for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].classList.remove("active");
+            tablinks[i].classList.remove("active");
         }
         document.getElementById(tabName).classList.add("active");
         evt.currentTarget.classList.add("active");
-      }
-    </script>
-  </body>
+    }
+</script>
+
+</body>
 </html>
